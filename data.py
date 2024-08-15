@@ -34,3 +34,14 @@ class TestDataLogin:
         "password": "123124"
     }
 
+
+class TestCreateOrderData:
+    ingredients = {
+        "ingredients": ["61c0c5a71d1f82001bdaaa70", "61c0c5a71d1f82001bdaaa6e"]
+    }
+    invalid_ingredient_hash = {
+        "ingredients": ["61c0c5a71d1fbdaaa70231324324244"]
+    }
+    no_ingredients = {
+        "ingredients": [""]
+    }
