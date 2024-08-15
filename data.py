@@ -1,6 +1,3 @@
-from faker import Faker
-
-
 class TestDataUrl:
     CREATE_USER_URL = "https://stellarburgers.nomoreparties.site/api/auth/register"
     AUTHORIZATION_URL = "https://stellarburgers.nomoreparties.site/api/auth/login"
