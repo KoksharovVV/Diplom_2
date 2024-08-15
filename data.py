@@ -21,3 +21,16 @@ class TestDataCreateUser:
         "email": "email",
         "password": "password",
     }
+
+
+class TestDataLogin:
+    user_does_not_exist = {
+        "email": "svin123124@mail.ru",
+        "password": "123123"
+    }
+
+    valid_user_with_incorrect_password = {
+        "email": "svin123123@mail.ru",
+        "password": "123124"
+    }
+
