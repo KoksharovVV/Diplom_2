@@ -15,6 +15,16 @@ def fake_user():
     return fake_user
 
 
+@pytest.fixture()
+def update():
+    fake = Faker()
+    update = {
+        "email": fake.email(),
+        "name": fake.user_name()
+    }
+    return update
+
+
 @pytest.fixture
 def create_user_delete_user(fake_user):
     response = requests.post(url=TestDataUrl.CREATE_USER_URL, data=fake_user)
