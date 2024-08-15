@@ -2,7 +2,6 @@ import pytest
 import requests
 from faker import Faker
 from data import TestDataUrl
-# from helpers.helpers import CreateUser
 
 
 @pytest.fixture
@@ -14,6 +13,8 @@ def fake_user():
         "name": fake.user_name()
     }
     return fake_user
+
+
 @pytest.fixture
 def create_user_delete_user(fake_user):
     response = requests.post(url=TestDataUrl.CREATE_USER_URL, data=fake_user)
